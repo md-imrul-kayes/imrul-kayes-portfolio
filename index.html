@@ -205,6 +205,34 @@
             font-size: 24px;
             font-weight: bold;
         }
+
+        /* Hero section background */
+        #home {
+            background: linear-gradient(135deg, rgba(10, 25, 47, 0.9), rgba(10, 25, 47, 0.95)), url('/images/bg.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+
+        .hero-image {
+            width: 100%;
+            max-width: 400px;
+            border-radius: 50%;
+            border: 4px solid #22d3ee;
+            box-shadow: 0 0 30px rgba(34, 211, 238, 0.5);
+            animation: float 3s ease-in-out infinite;
+        }
+
+        .about-image {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            border: 4px solid #22d3ee;
+            box-shadow: 0 0 30px rgba(34, 211, 238, 0.5);
+            object-fit: cover;
+            animation: float 3s ease-in-out infinite;
+        }
     </style>
 </head>
 <body class="text-white">
@@ -257,57 +285,56 @@
                 <img src="/images/profile.png" alt="Imrul Kayes" class="hero-image">
             </div>
         </div>
-    </section>
-    <!-- Right Content - Round Tech Icons -->
-    <div class="relative">
-        <div class="icons-grid">
-            <!-- Row 1 -->
-            <div class="tech-icon float-icon" style="animation-delay: 0s">
-                <i class="fab fa-react"></i>
-            </div>
-            <div class="tech-icon float-icon" style="animation-delay: 0.2s">
-                <i class="fab fa-node-js"></i>
-            </div>
-            <div class="tech-icon float-icon" style="animation-delay: 0.4s">
-                <i class="fab fa-python"></i>
-            </div>
+        
+        <!-- Tech Icons Grid -->
+        <div class="container mx-auto mt-12">
+            <div class="icons-grid">
+                <!-- Row 1 -->
+                <div class="tech-icon float-icon" style="animation-delay: 0s">
+                    <i class="fab fa-react"></i>
+                </div>
+                <div class="tech-icon float-icon" style="animation-delay: 0.2s">
+                    <i class="fab fa-node-js"></i>
+                </div>
+                <div class="tech-icon float-icon" style="animation-delay: 0.4s">
+                    <i class="fab fa-python"></i>
+                </div>
 
-            <!-- Row 2 -->
-            <div class="tech-icon float-icon" style="animation-delay: 0.6s">
-                <span class="icon-text">TS</span>
-            </div>
-            <div class="tech-icon float-icon" style="animation-delay: 0.8s">
-                <i class="fab fa-php"></i>
-            </div>
-            <div class="tech-icon float-icon" style="animation-delay: 1s">
-                <i class="fab fa-js"></i>
-            </div>
+                <!-- Row 2 -->
+                <div class="tech-icon float-icon" style="animation-delay: 0.6s">
+                    <span class="icon-text">TS</span>
+                </div>
+                <div class="tech-icon float-icon" style="animation-delay: 0.8s">
+                    <i class="fab fa-php"></i>
+                </div>
+                <div class="tech-icon float-icon" style="animation-delay: 1s">
+                    <i class="fab fa-js"></i>
+                </div>
 
-            <!-- Row 3 -->
-            <div class="tech-icon float-icon" style="animation-delay: 1.2s">
-                <span class="icon-text">3B</span>
-            </div>
-            <div class="tech-icon float-icon" style="animation-delay: 1.4s">
-                <i class="fas fa-database"></i>
-                <span class="ml-1 text-sm">SQL</span>
-            </div>
-            <div class="tech-icon float-icon" style="animation-delay: 1.6s">
-                <span class="icon-text">MySQL</span>
-            </div>
+                <!-- Row 3 -->
+                <div class="tech-icon float-icon" style="animation-delay: 1.2s">
+                    <span class="icon-text">3B</span>
+                </div>
+                <div class="tech-icon float-icon" style="animation-delay: 1.4s">
+                    <i class="fas fa-database"></i>
+                    <span class="ml-1 text-sm">SQL</span>
+                </div>
+                <div class="tech-icon float-icon" style="animation-delay: 1.6s">
+                    <span class="icon-text">MySQL</span>
+                </div>
 
-            <!-- Row 4 - Additional icons -->
-            <div class="tech-icon float-icon" style="animation-delay: 1.8s">
-                <i class="fab fa-html5"></i>
-            </div>
-            <div class="tech-icon float-icon" style="animation-delay: 2s">
-                <i class="fab fa-css3-alt"></i>
-            </div>
-            <div class="tech-icon float-icon" style="animation-delay: 2.2s">
-                <i class="fab fa-aws"></i>
+                <!-- Row 4 - Additional icons -->
+                <div class="tech-icon float-icon" style="animation-delay: 1.8s">
+                    <i class="fab fa-html5"></i>
+                </div>
+                <div class="tech-icon float-icon" style="animation-delay: 2s">
+                    <i class="fab fa-css3-alt"></i>
+                </div>
+                <div class="tech-icon float-icon" style="animation-delay: 2.2s">
+                    <i class="fab fa-aws"></i>
+                </div>
             </div>
         </div>
-    </div>
-    </div>
     </section>
 
     <!-- About Section with Image -->
@@ -347,10 +374,10 @@
                 <div class="card rounded-xl p-6">
                     <h3 class="text-xl font-semibold text-cyan-400 mb-4">Programming Languages</h3>
                     <div class="flex flex-wrap gap-3">
-                        <span class="float-animation px-4 py-2 bg-[#0a192f] rounded-lg text-gray-300 border border-cyan-500/20 hover:border-cyan-400 hover:text-cyan-400 transition-all duration-300">C++</span>
-                        <span class="float-animation px-4 py-2 bg-[#0a192f] rounded-lg text-gray-300 border border-cyan-500/20 hover:border-cyan-400 hover:text-cyan-400 transition-all duration-300" style="animation-delay: 0.1s">Java</span>
-                        <span class="float-animation px-4 py-2 bg-[#0a192f] rounded-lg text-gray-300 border border-cyan-500/20 hover:border-cyan-400 hover:text-cyan-400 transition-all duration-300" style="animation-delay: 0.2s">C#</span>
-                        <span class="float-animation px-4 py-2 bg-[#0a192f] rounded-lg text-gray-300 border border-cyan-500/20 hover:border-cyan-400 hover:text-cyan-400 transition-all duration-300" style="animation-delay: 0.3s">Python</span>
+                        <span class="px-4 py-2 bg-[#0a192f] rounded-lg text-gray-300 border border-cyan-500/20 hover:border-cyan-400 hover:text-cyan-400 transition-all duration-300">C++</span>
+                        <span class="px-4 py-2 bg-[#0a192f] rounded-lg text-gray-300 border border-cyan-500/20 hover:border-cyan-400 hover:text-cyan-400 transition-all duration-300">Java</span>
+                        <span class="px-4 py-2 bg-[#0a192f] rounded-lg text-gray-300 border border-cyan-500/20 hover:border-cyan-400 hover:text-cyan-400 transition-all duration-300">C#</span>
+                        <span class="px-4 py-2 bg-[#0a192f] rounded-lg text-gray-300 border border-cyan-500/20 hover:border-cyan-400 hover:text-cyan-400 transition-all duration-300">Python</span>
                     </div>
                 </div>
 
@@ -358,9 +385,9 @@
                 <div class="card rounded-xl p-6">
                     <h3 class="text-xl font-semibold text-cyan-400 mb-4">Web Development</h3>
                     <div class="flex flex-wrap gap-3">
-                        <span class="float-animation px-4 py-2 bg-[#0a192f] rounded-lg text-gray-300 border border-cyan-500/20 hover:border-cyan-400 hover:text-cyan-400 transition-all duration-300">HTML</span>
-                        <span class="float-animation px-4 py-2 bg-[#0a192f] rounded-lg text-gray-300 border border-cyan-500/20 hover:border-cyan-400 hover:text-cyan-400 transition-all duration-300" style="animation-delay: 0.1s">CSS</span>
-                        <span class="float-animation px-4 py-2 bg-[#0a192f] rounded-lg text-gray-300 border border-cyan-500/20 hover:border-cyan-400 hover:text-cyan-400 transition-all duration-300" style="animation-delay: 0.2s">JavaScript</span>
+                        <span class="px-4 py-2 bg-[#0a192f] rounded-lg text-gray-300 border border-cyan-500/20 hover:border-cyan-400 hover:text-cyan-400 transition-all duration-300">HTML</span>
+                        <span class="px-4 py-2 bg-[#0a192f] rounded-lg text-gray-300 border border-cyan-500/20 hover:border-cyan-400 hover:text-cyan-400 transition-all duration-300">CSS</span>
+                        <span class="px-4 py-2 bg-[#0a192f] rounded-lg text-gray-300 border border-cyan-500/20 hover:border-cyan-400 hover:text-cyan-400 transition-all duration-300">JavaScript</span>
                     </div>
                 </div>
 
@@ -368,10 +395,10 @@
                 <div class="card rounded-xl p-6">
                     <h3 class="text-xl font-semibold text-cyan-400 mb-4">Other Skills</h3>
                     <div class="flex flex-wrap gap-3">
-                        <span class="float-animation px-4 py-2 bg-[#0a192f] rounded-lg text-gray-300 border border-cyan-500/20 hover:border-cyan-400 hover:text-cyan-400 transition-all duration-300">Database</span>
-                        <span class="float-animation px-4 py-2 bg-[#0a192f] rounded-lg text-gray-300 border border-cyan-500/20 hover:border-cyan-400 hover:text-cyan-400 transition-all duration-300" style="animation-delay: 0.1s">Computer Graphics</span>
-                        <span class="float-animation px-4 py-2 bg-[#0a192f] rounded-lg text-gray-300 border border-cyan-500/20 hover:border-cyan-400 hover:text-cyan-400 transition-all duration-300" style="animation-delay: 0.2s">UI/UX Design</span>
-                        <span class="float-animation px-4 py-2 bg-[#0a192f] rounded-lg text-gray-300 border border-cyan-500/20 hover:border-cyan-400 hover:text-cyan-400 transition-all duration-300" style="animation-delay: 0.3s">Problem Solving</span>
+                        <span class="px-4 py-2 bg-[#0a192f] rounded-lg text-gray-300 border border-cyan-500/20 hover:border-cyan-400 hover:text-cyan-400 transition-all duration-300">Database</span>
+                        <span class="px-4 py-2 bg-[#0a192f] rounded-lg text-gray-300 border border-cyan-500/20 hover:border-cyan-400 hover:text-cyan-400 transition-all duration-300">Computer Graphics</span>
+                        <span class="px-4 py-2 bg-[#0a192f] rounded-lg text-gray-300 border border-cyan-500/20 hover:border-cyan-400 hover:text-cyan-400 transition-all duration-300">UI/UX Design</span>
+                        <span class="px-4 py-2 bg-[#0a192f] rounded-lg text-gray-300 border border-cyan-500/20 hover:border-cyan-400 hover:text-cyan-400 transition-all duration-300">Problem Solving</span>
                     </div>
                 </div>
             </div>
@@ -380,14 +407,14 @@
             <div class="card rounded-xl p-8">
                 <h3 class="text-2xl font-semibold text-cyan-400 mb-6 text-center">Tools & Software</h3>
                 <div class="flex flex-wrap justify-center gap-4">
-                    <span class="float-animation px-4 py-2 bg-[#0a192f] rounded-full text-gray-300 border border-cyan-500/20 hover:border-cyan-400 hover:text-cyan-400 transition-all duration-300">VS Code</span>
-                    <span class="float-animation px-4 py-2 bg-[#0a192f] rounded-full text-gray-300 border border-cyan-500/20 hover:border-cyan-400 hover:text-cyan-400 transition-all duration-300" style="animation-delay: 0.1s">Git</span>
-                    <span class="float-animation px-4 py-2 bg-[#0a192f] rounded-full text-gray-300 border border-cyan-500/20 hover:border-cyan-400 hover:text-cyan-400 transition-all duration-300" style="animation-delay: 0.2s">Figma</span>
-                    <span class="float-animation px-4 py-2 bg-[#0a192f] rounded-full text-gray-300 border border-cyan-500/20 hover:border-cyan-400 hover:text-cyan-400 transition-all duration-300" style="animation-delay: 0.3s">Visual Studio</span>
-                    <span class="float-animation px-4 py-2 bg-[#0a192f] rounded-full text-gray-300 border border-cyan-500/20 hover:border-cyan-400 hover:text-cyan-400 transition-all duration-300" style="animation-delay: 0.4s">Google Colab</span>
-                    <span class="float-animation px-4 py-2 bg-[#0a192f] rounded-full text-gray-300 border border-cyan-500/20 hover:border-cyan-400 hover:text-cyan-400 transition-all duration-300" style="animation-delay: 0.5s">Jupyter Notebook</span>
-                    <span class="float-animation px-4 py-2 bg-[#0a192f] rounded-full text-gray-300 border border-cyan-500/20 hover:border-cyan-400 hover:text-cyan-400 transition-all duration-300" style="animation-delay: 0.6s">Anaconda</span>
-                    <span class="float-animation px-4 py-2 bg-[#0a192f] rounded-full text-gray-300 border border-cyan-500/20 hover:border-cyan-400 hover:text-cyan-400 transition-all duration-300" style="animation-delay: 0.7s">CodeBlocks</span>
+                    <span class="px-4 py-2 bg-[#0a192f] rounded-full text-gray-300 border border-cyan-500/20 hover:border-cyan-400 hover:text-cyan-400 transition-all duration-300">VS Code</span>
+                    <span class="px-4 py-2 bg-[#0a192f] rounded-full text-gray-300 border border-cyan-500/20 hover:border-cyan-400 hover:text-cyan-400 transition-all duration-300">Git</span>
+                    <span class="px-4 py-2 bg-[#0a192f] rounded-full text-gray-300 border border-cyan-500/20 hover:border-cyan-400 hover:text-cyan-400 transition-all duration-300">Figma</span>
+                    <span class="px-4 py-2 bg-[#0a192f] rounded-full text-gray-300 border border-cyan-500/20 hover:border-cyan-400 hover:text-cyan-400 transition-all duration-300">Visual Studio</span>
+                    <span class="px-4 py-2 bg-[#0a192f] rounded-full text-gray-300 border border-cyan-500/20 hover:border-cyan-400 hover:text-cyan-400 transition-all duration-300">Google Colab</span>
+                    <span class="px-4 py-2 bg-[#0a192f] rounded-full text-gray-300 border border-cyan-500/20 hover:border-cyan-400 hover:text-cyan-400 transition-all duration-300">Jupyter Notebook</span>
+                    <span class="px-4 py-2 bg-[#0a192f] rounded-full text-gray-300 border border-cyan-500/20 hover:border-cyan-400 hover:text-cyan-400 transition-all duration-300">Anaconda</span>
+                    <span class="px-4 py-2 bg-[#0a192f] rounded-full text-gray-300 border border-cyan-500/20 hover:border-cyan-400 hover:text-cyan-400 transition-all duration-300">CodeBlocks</span>
                 </div>
             </div>
         </div>
@@ -467,7 +494,7 @@
             <h2 class="text-4xl font-bold text-center mb-12 gradient-text">Education</h2>
             <div class="max-w-2xl mx-auto">
                 <div class="relative card rounded-xl p-8">
-                    <div class="absolute -top-3 -left-3 w-12 h-12 bg-gradient-to-br from-cyan-500 to-blue-500 rounded-full flex items-center justify-center shadow-lg glow">
+                    <div class="absolute -top-3 -left-3 w-12 h-12 bg-gradient-to-br from-cyan-500 to-blue-500 rounded-full flex items-center justify-center shadow-lg">
                         <i class="fas fa-graduation-cap text-white text-xl"></i>
                     </div>
                     <div class="ml-6">
